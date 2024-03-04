@@ -55,7 +55,7 @@ try:
         == "y"
     ):
         pass
-    # AUTO LOGIN: This code for auto login which I used extensively during testing, so I'm leaving it here.
+    # AUTO LOGIN: This code is for auto login which I used extensively during testing, so I'm leaving it here.
     # driver.find_element(By.NAME, "username").send_keys("YOUR_USERNAME")
     # for i in "YOUR_PASSWORD":
     #     driver.find_element(By.NAME, "password").send_keys(i)
