@@ -6,11 +6,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 
-print("del-all-ig-activity: Script started")
+print("del-all-ig-comments: Script started")
 while (
     browser := int(
         input(
-            "del-all-ig-activity: [1]Chrome [2]Edge [3]Safari. Choose your browser (1/2/3)"
+            "del-all-ig-comments: [1]Chrome [2]Edge [3]Safari. Choose your browser (1/2/3)"
         )
     )
 ) not in [1, 2, 3]:
@@ -19,7 +19,7 @@ try:
     if browser == 3:
         while (
             input(
-                "del-all-ig-activity: Go to Safari > Settings... > Developer and check 'Allow Remote Automation' before proceeding. Proceed? (y/n)"
+                "del-all-ig-comments: Go to Safari > Settings... > Developer and check 'Allow Remote Automation' before proceeding. Proceed? (y/n)"
             ).lower()
             != "y"
         ):
@@ -33,11 +33,11 @@ try:
     except Exception as e:
         print(
             e,
-            "\ndel-all-ig-activity: Web driver could not start. Have you installed the appropriate web driver? Check README for more info.",
+            "\ndel-all-ig-comments: Web driver could not start. Have you installed the appropriate web driver? Check README for more info.",
         )
         raise KeyboardInterrupt
     print(
-        "del-all-ig-activity: Opened "
+        "del-all-ig-comments: Opened "
         + (
             "Chrome"
             if browser == 1
@@ -46,11 +46,11 @@ try:
     )
     driver.get("https://www.instagram.com/your_activity/interactions/comments")
     print(
-        "del-all-ig-activity: Opening https://www.instagram.com/your_activity/interactions/comments"
+        "del-all-ig-comments: Opening https://www.instagram.com/your_activity/interactions/comments"
     )
     while (
         not input(
-            "del-all-ig-activity: Sign into your Instagram account before proceeding. Proceed? (y/n)"
+            "del-all-ig-comments: Sign into your Instagram account before proceeding. Proceed? (y/n)"
         ).lower()
         == "y"
     ):
@@ -69,21 +69,21 @@ try:
             if div.text == "Not now":
                 div.send_keys(Keys.ENTER)
                 print(
-                    "del-all-ig-activity: Clicked 'Not now' on 'Save Your Login Info?'"
+                    "del-all-ig-comments: Clicked 'Not now' on 'Save Your Login Info?'"
                 )
                 break
             else:
                 raise Exception
         except:
             print(
-                "del-all-ig-activity: Expected to see 'Save Your Login Info?' prompt. Retrying in 5 seconds..."
+                "del-all-ig-comments: Expected to see 'Save Your Login Info?' prompt. Retrying in 5 seconds..."
             )
             time.sleep(5)
-            print("del-all-ig-activity: Retrying now...")
+            print("del-all-ig-comments: Retrying now...")
     while True:
         comments_wait = WebDriverWait(driver, 30)
         try:
-            print("del-all-ig-activity: Looking for comments...")
+            print("del-all-ig-comments: Looking for comments...")
             comments_wait.until(
                 EC.presence_of_element_located(
                     (
@@ -92,9 +92,9 @@ try:
                     )
                 )
             )
-            print("del-all-ig-activity: Comments loaded")
+            print("del-all-ig-comments: Comments loaded")
         except TimeoutException:
-            print("del-all-ig-activity: No comments found. DONE")
+            print("del-all-ig-comments: No comments found. DONE")
             raise KeyboardInterrupt
         except Exception as e:
             raise e
@@ -103,7 +103,7 @@ try:
         ):
             if i.text == "Select":
                 driver.execute_script("arguments[0].click();", i)
-                print("del-all-ig-activity: Clicked 'Select'")
+                print("del-all-ig-comments: Clicked 'Select'")
                 break
         selected_count = 0
         for i in driver.find_elements(
@@ -113,7 +113,7 @@ try:
                 driver.execute_script("arguments[0].click();", i)
                 selected_count += 1
                 print(
-                    "del-all-ig-activity: Selected a comment for deletion (Total: "
+                    "del-all-ig-comments: Selected a comment for deletion (Total: "
                     + str(selected_count)
                     + ")"
                 )
@@ -122,15 +122,15 @@ try:
         ):
             if i.text == "Delete":
                 driver.execute_script("arguments[0].click();", i)
-                print("del-all-ig-activity: Clicked 'Delete'")
+                print("del-all-ig-comments: Clicked 'Delete'")
                 break
         for i in driver.find_elements(By.CSS_SELECTOR, 'div[role="dialog"] button'):
             if i.find_element(By.CSS_SELECTOR, "div").text == "Delete":
                 driver.execute_script("arguments[0].click();", i)
-                print("del-all-ig-activity: Clicked 'Delete' on confirmation dialog")
+                print("del-all-ig-comments: Clicked 'Delete' on confirmation dialog")
                 break
 except KeyboardInterrupt:
-    print("del-all-ig-activity: Quitting...")
+    print("del-all-ig-comments: Quitting...")
 except Exception as e:
     print(e)
 try:

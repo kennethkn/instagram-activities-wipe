@@ -1,8 +1,8 @@
-# delete-all-instagram-activity
+# delete-instagram-comments-likes
 
 A Python script that uses Selenium to automate deleting all your Instagram comments.
 
-This script was created because Instagram does not provide a "Select All" button when you are trying to delete your activity. Users are forced to manually select each like and comment to delete them. This script automates that process.
+This script was created because Instagram does not provide a "Select All" button when you are trying to delete your comments and likes. Users are forced to manually select each like and comment to delete them. This script automates that process.
 
 The feature to delete all likes will be added soon.
 
