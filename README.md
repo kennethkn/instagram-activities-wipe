@@ -34,7 +34,7 @@ The feature to delete all likes will be added soon.
 4. Run the script
 
     ```shell
-    python del_all_ig_activity.py
+    python del_all_ig_comments.py
     ```
 
     The script provides instructions and updates on its progress as it runs, so simply follow them.
@@ -43,7 +43,7 @@ The feature to delete all likes will be added soon.
 
 ## Is it safe?
 
-Look at the [code](del_all_ig_activity.py). Look at my [LinkedIn](https://www.linkedin.com/in/kenneth-kwan-6bb396262). I am a good guy.
+Look at the [code](del_all_ig_comments.py). Look at my [LinkedIn](https://www.linkedin.com/in/kenneth-kwan-6bb396262). I am a good guy.
 
 ## Contributing
 
