@@ -12,6 +12,8 @@ The feature to delete all likes will be added soon.
 
 - [Python 3.x](https://www.python.org/downloads/)
   - Using brew: `brew install python`
+- [Chrome](https://www.google.com/intl/en_us/chrome/)
+  - Using brew: `brew install chrome`
 - [ChromeDriver](https://chromedriver.chromium.org/downloads)
   - Using brew: `brew install chromedriver`
 
