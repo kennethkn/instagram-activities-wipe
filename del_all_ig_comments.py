@@ -6,17 +6,19 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 import time
 import platform
+import pathlib
 
 print("del-all-ig-comments: Script started")
 try:
     # Start Chrome browser
     try:
         options = Options()
-        # Prevent having to login every time you run the script
+        # Store login in a Chrome profile
         if platform.system() == "Windows":
-            options.add_argument("user-data-dir=%TEMP%\\del-ig-comments-likes")
+            wd = pathlib.Path().absolute()
+            options.add_argument(f"user-data-dir={wd}\\chrome-profile")
         else:
-            options.add_argument("user-data-dir=/tmp/del-ig-comments-likes")
+            options.add_argument("user-data-dir=chrome-profile")
         driver = webdriver.Chrome(options=options)
     except Exception as e:
         print(
@@ -40,6 +42,9 @@ try:
             print("del-all-ig-comments: Login detected.")
             break
         try:
+            print(
+                "del-all-ig-comments: Waiting for sign in... (Please go to the browser and sign in. Don't click anything else after signing in!)"
+            )
             wait = WebDriverWait(driver, 60)
 
             def is_not_now_div_present(driver):
@@ -57,9 +62,7 @@ try:
             print("del-all-ig-comments: Clicked 'Not now' on 'Save Your Login Info?'")
             break
         except TimeoutException:
-            print(
-                "del-all-ig-comments: Waiting for sign in... (Please go to the browser and sign in. Don't click anything else after signing in!)"
-            )
+            pass
 
     # Main loop
     while True:
