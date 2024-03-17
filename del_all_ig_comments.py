@@ -14,9 +14,7 @@ try:
         options = Options()
         # Prevent having to login every time you run the script
         if platform.system() == "Windows":
-            options.add_argument(
-                "user-data-dir=C:\\Users\\Username\\AppData\\Local\\Google\\Chrome\\User Data"
-            )
+            options.add_argument("user-data-dir=%TEMP%\\del-ig-comments-likes")
         else:
             options.add_argument("user-data-dir=/tmp/del-ig-comments-likes")
         driver = webdriver.Chrome(options=options)
