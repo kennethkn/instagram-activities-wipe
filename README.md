@@ -27,10 +27,19 @@ Update 03/17/24:
 1. Clone this repository
 2. Optional: Use a venv
 
-    ```shell
-    python -m venv venv
-    source venv/bin/activate
-    ```
+    - macOS/Linux:
+
+      ```shell
+      python -m venv venv
+      source venv/bin/activate # mac/linux
+      ```
+
+    - Windows:
+
+      ```shell
+      python -m venv venv
+      .\venv\Scripts\activate
+      ```
 
 3. Install the required dependencies
 
