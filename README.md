@@ -31,7 +31,7 @@ Update 03/17/24:
 
       ```shell
       python -m venv venv
-      source venv/bin/activate # mac/linux
+      source venv/bin/activate
       ```
 
     - Windows:
