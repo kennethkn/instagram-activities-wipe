@@ -69,7 +69,7 @@ Update 03/17/24:
 
 ## Is it safe?
 
-Look at the [code](del_all_ig_comments.py). Look at my [LinkedIn](https://www.linkedin.com/in/kenneth-kwan-6bb396262). I am a good guy.
+Look at the code ([comments.py](comments.py) [likes.py](likes.py)). Look at my [LinkedIn](https://www.linkedin.com/in/kenneth-kwan-6bb396262). I am a good guy.
 
 ## Contributing
 
