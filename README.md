@@ -4,6 +4,8 @@ Wipe Instagram comments/likes with Selenium automation in Python.
 
 Instagram does not provide a "Select All" button for deleting comments and likes. Users are forced to manually select each like and comment to delete them. This script automates that process.
 
+<img src="demo.jpg" alt="Demo">
+
 **Hope it helps!** Star this repo to save it for later :wink:
 
 Disclaimer: This script is for educational purposes only. Use at your own risk. I am not responsible for any actions taken against your account by Instagram.
