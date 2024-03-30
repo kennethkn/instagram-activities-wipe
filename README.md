@@ -1,8 +1,8 @@
-# delete-instagram-comments-likes
+# instagram-activities-wipe
 
-A Python script that automates deleting all your Instagram comments or likes with the help of [Selenium](https://github.com/SeleniumHQ/selenium).
+Wipe Instagram comments/likes with Selenium automation in Python.
 
-This script was created because Instagram does not provide a "Select All" button when you are trying to delete your comments and likes. Users are forced to manually select each like and comment to delete them. This script automates that process.
+Instagram does not provide a "Select All" button for deleting comments and likes. Users are forced to manually select each like and comment to delete them. This script automates that process.
 
 **Hope it helps!** Star this repo to save it for later :wink:
 
@@ -49,19 +49,19 @@ Update 03/17/24:
 
 4. Run the script you want
 
-    - Delete all Instagram comments:
+    - Wipe comments:
 
       ```shell
-      python del_all_ig_comments.py
+      python comments.py
       ```
 
-    - Delete all Instagram likes:
+    - Wipe likes:
 
       ```shell
-      python del_all_ig_likes.py
+      python likes.py
       ```
 
-    The script provides instructions and updates on its progress as it runs, so simply follow them.
+      The script logs its progress in the terminal and provides instructions as it runs, so simply follow them.
 
 5. Give the repo a star if it helped!
 
@@ -72,7 +72,3 @@ Look at the [code](del_all_ig_comments.py). Look at my [LinkedIn](https://www.li
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
-
-## License
-
-[MIT License](LICENSE)
