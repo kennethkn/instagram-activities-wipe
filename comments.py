@@ -45,7 +45,7 @@ try:
         if driver.current_url.startswith(
             "https://www.instagram.com/your_activity/interactions/comments"
         ):
-            logging.info("Login detected.")
+            logging.info("Login detected")
             break
         try:
             logging.info(
