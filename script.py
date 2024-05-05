@@ -40,7 +40,7 @@ try:
         sys.exit(1)
     logging.info("Opened Chrome browser")
 
-    while mode := input("Enter 1 to wipe comments, 2 to wipe likes [1/2]: ").strip() not in ["1", "2"]:
+    while (mode := input("Enter 1 to wipe comments, 2 to wipe likes [1/2]: ").strip()) not in ["1", "2"]:
         pass
     MODE = int(mode)
 
