@@ -10,7 +10,7 @@ Instagram does not provide a "Select All" button for deleting comments and likes
 
 Disclaimer: This script is for educational purposes only. Use at your own risk. I am not responsible for any actions taken against your account by Instagram.
 
-Update 05/05/25:
+Update 05/05/24:
 
 - You can now continue running the script after the rate limit has been reached. The script will automatically resume after it detects the rate limit has been lifted.
 - Combined into one script.
