@@ -57,7 +57,7 @@ Update 03/17/24:
 4. Run the script
 
     ```shell
-    python scripts.py
+    python script.py
     ```
 
     The script logs its progress in the terminal and provides instructions as it runs, so simply follow them.
