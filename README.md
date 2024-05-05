@@ -66,7 +66,7 @@ Update 03/17/24:
 
 ## Is it safe?
 
-Look at the code ([script.py](script.py). Look at my [LinkedIn](https://www.linkedin.com/in/kenneth-kwan-6bb396262). I am a good guy.
+Look at the code ([script.py](script.py)). Look at my [LinkedIn](https://www.linkedin.com/in/kenneth-kwan-6bb396262). I am a good guy.
 
 ## Contributing
 
