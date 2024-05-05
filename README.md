@@ -10,6 +10,11 @@ Instagram does not provide a "Select All" button for deleting comments and likes
 
 Disclaimer: This script is for educational purposes only. Use at your own risk. I am not responsible for any actions taken against your account by Instagram.
 
+Update 05/05/25:
+
+- You can now continue running the script after the rate limit has been reached. The script will automatically resume after it detects the rate limit has been lifted.
+- Combined into one script.
+
 Update 03/17/24:
 
 - I have noticed Instagram imposes rate limits on the number of actions you can perform in a given time period. The script will tell you if you have hit the rate limit, and if so, you can try running the script a few hours later.
@@ -49,27 +54,19 @@ Update 03/17/24:
     pip install -r requirements.txt
     ```
 
-4. Run the script you want
+4. Run the script
 
-    - Wipe comments:
+    ```shell
+    python scripts.py
+    ```
 
-      ```shell
-      python comments.py
-      ```
-
-    - Wipe likes:
-
-      ```shell
-      python likes.py
-      ```
-
-      The script logs its progress in the terminal and provides instructions as it runs, so simply follow them.
+    The script logs its progress in the terminal and provides instructions as it runs, so simply follow them.
 
 5. Give the repo a star if it helped!
 
 ## Is it safe?
 
-Look at the code ([comments.py](comments.py) [likes.py](likes.py)). Look at my [LinkedIn](https://www.linkedin.com/in/kenneth-kwan-6bb396262). I am a good guy.
+Look at the code ([script.py](script.py). Look at my [LinkedIn](https://www.linkedin.com/in/kenneth-kwan-6bb396262). I am a good guy.
 
 ## Contributing
 
