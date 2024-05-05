@@ -28,6 +28,7 @@ Update 03/17/24:
   - Using brew: `brew install chrome`
 - [ChromeDriver](https://chromedriver.chromium.org/downloads)
   - Using brew: `brew install chromedriver`
+- English as your Instagram interface language
 
 ## Usage
 
